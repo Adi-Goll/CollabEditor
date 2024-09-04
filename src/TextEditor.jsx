@@ -5,7 +5,7 @@ import 'quill/dist/quill.snow.css'
 
 export default function TextEditor() {
 
-    const [editorData, updateEditorData] = useState("")
+
 
     // useCallback lets us store a function definition between renders and makes sure
     // that the function is not continuously called everytime the page re-renders
@@ -29,4 +29,5 @@ export default function TextEditor() {
         <div>
             <div className="container" ref={editorCotainer}></div>
         </div>)
+
 }

@@ -37,6 +37,7 @@ body {
     top: 0;
     z-index: 1;
     background-color: #F9FBFD;
+    border: none;
 
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 
@@ -49,6 +50,14 @@ body {
 @media print {
     body {
         background: none;
+    }
+
+    html,
+    body {
+        height: 100vh;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
     }
 
     .container .ql-editor {
